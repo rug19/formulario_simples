@@ -1,0 +1,138 @@
+/* importa as fontes utilizadas no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+    
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(94, 94, 170);
+}
+
+.container{
+    width: 40%;
+    margin-top: 40px;
+    background-color: #6d6dbf;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.titulos{
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.input-group {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0.6rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box select {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box textarea {
+    margin: 0.6rem 0;
+    padding: 1.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.input-box input::placeholder {
+    color:#474343be;
+} 
+
+
+/* customiza o botão CONTINUE */
+.botao button {
+    width: 100%;
+    margin-top: 0rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* o hover da um destaque no botao quando o mouse esta em cima */
+.botao button:hover {
+    background-color: #020116f1;
+}
+
+/* muda a cor do texto do botao para branco */
+.botao button {
+   /* remove a linha que fica abaixo do nome dentro do botao */
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ajustar o formulário ao tamanho da tela */
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <title>CADASTRO DO ALUNO</title>
+</head>
+<!-- formulario em html -->
+<body>
+    <div class="container">
+ 
+        <form action="#">
+                       
+            <div class="input-group">
+                <div class="titulos"><h2> Dados do aluno</h2></div>
+                <div class="input-box">
+                    <label for="nome">Nome Completo</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-box">
+                    <label for="idade">Idade</label>
+                    <input id="idade" type="number" name="idade" placeholder="Qual sua idade">
+                </div>
+
+                <div class="titulos"><h2> Endereço</h2></div>
+                <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" size="10" maxlength="10" placeholder="00.000-000">
+                </div>
+                <div class="input-box">
+                    <label for="estado">Estado</label>
+                     <select name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
+                </div>
+                <div class="input-box">
+                    <label for="rua">Rua</label>
+                    <input id="rua" type="text" name="rua" placeholder="Rua">
+                </div>
+                <div class="input-box">
+                    <label for="numero">Nº</label>
+                    <input id="numero" type="text" name="numero" placeholder="Número">
+                </div>
+                <div class="input-box">
+                    <label for="complemento">Complemento</label>
+                    <textarea id="complemento" name="complemento"></textarea>
+                </div>
+
+                <div class="titulos"><h2> Dados do cartão</h2></div>
+               
+                <div class="input-box">
+                    <label for="numcartao">Número</label>
+                    <input id="numcartao" type="text" name="numcartao" placeholder="Número" required>
+                </div>
+                <div class="input-box">
+                    <label for="nomecartao">Nome</label>
+                    <input id="nomecartao" type="text" name="nomecartao" placeholder="Igual ao impresso no cartão" required>
+                </div>
+                <div class="input-box">
+                    <label for="valcartao">Validade</label>
+                    <input id="valcartao" type="text" name="valcartao" placeholder="Mes/Ano" required>
+                </div>
+                <div class="input-box">
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" type="text" name="cvv" placeholder="No verso do cartão">
+                </div>
+                <div class="botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>    
+        </form>
+</div>    
+</body>
+</html>
