@@ -6,12 +6,13 @@
 2 - Relate todos os erros encontrados nas issues com comentários e links uteis.
 3 - Pode usar o proprio issues do github desse repositorio ou trello.
 4 - Se for usar o trello colocar o link e deixar aberto o projeto.
+3 - Utilize uma branch com a develop para fazer as suas alterações.
 ````
 
 ## Requisitos não funcionais
 ````
 1 - Utilizar tag semanticas
-2 - Link de referência utilizada nos projetos como comentários 
+2 - Link de referência utilizada nos projetos como comentários
 ````
 
 ![image](https://github.com/DC-FS04-SUL/formulario_simples/assets/19413241/c42f6534-39da-49ac-b332-646192ae46b2)
