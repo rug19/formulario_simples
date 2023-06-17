@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/html" href="./cadastro.html">
+</head>
+
+<body>
+
+
+   
+      <div >
+        <h1 id="titulo">Texto sobre a Pesquisa</h1>
+        <br>
+        <hr>
+      </div>
+ 
+    <form>
+     
+        <strong>
+          <br>
+    <fieldset>
+      <br>
+      <p>Dados:</p>
+     
+      <div class="campo">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required>
+      </div>
+      <div class="campo">
+        <label for="iemail">E-mail:</label>
+        <input type="text" name="email" id="iemail" required>
+      </div>
+      <div class="campo">
+        <label for="iidade">Idade:</label>
+        <input type="text" name="idade" id="iidade" required>
+      </div>
+      <div>
+      <p>Qual melhor descreve sua situação atual?</p>
+      <select name="time">
+        <option value="aluna">Aluna</option>
+        <option value="trabalho">Trabalho em tempo Integral</option>
+        <option value="aprendiz">"Aprendiz em tempo Integral</option>
+        <option value="prefiro">"Prefiro não dizer"</option>
+        <option value="outro">Outro</option>
+        </select>
+      
+    </div>
+    <p>Algum comentario e Sugestão</p>
+    <input type="text" name="idade" id="iidade" required>
+     
+              <br>
+              <button class="botao" type="submit"><strong><u>Enviar Cadastro</u></strong></button>
+              <br>
+              <br>
+    </fieldset>
