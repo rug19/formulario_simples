@@ -4,70 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formualrio</title>
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
     <main>
-        <div class="form">
+        <!-- Formulario -->
+        <section class="form">
             <form action="#">
-                <h1 class="title">Formulário de pesquisa</h1>
-                <h3 class="subtitle">Obrigado por ajudar a nossa pesquisa</h3>
-                <div class="container">
-                    <label for="nome">Nome</label>
-                    <div class="Nome">
-                        <input type="text" name="nome" id="nome" placeholder="Nome" required>
-                    </div>
-                    <label for="email">Email</label>
-                    <div class="Email">
-                        <input type="text" name="email" id="email" placeholder="Email" required>
-                    </div>
-                    <label for="idade">Idade</label>
-                    <div class="Idade">
-                        <input type="number" name="idade" id="idade" placeholder="Email" required>
-                    </div>
-                    <label for="funcao">Qual melhor descreve a sua função?</label>
-                    <div class="funcao">
-                    <select name="funcao" id="funcao">
-                        <option value="Aluna">Aluna</option>
-                        <option value="Trabalho">Trabalho em tempo integral</option>
-                        <option value="Aprendiz">Aprendiz em tempo integral</option>
-                        <option value="Não dizer">Prefiro não dizer</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                    </div>
-                    <label for="recomendacao">Você recomendaria o GITHUB a um amigo?</label>
-                    <div class="definitivamente">
-                        <input type="radio" id="nao_tem_certeza" name="definitivamente">
-                        <label for="definitivamente">Definitivamente</label>   
-                    </div>
-                    <div class="talvez">
-                        <input type="radio" id="nao_tem_certeza" name="talvez">
-                        <label for="talvez">Talvez</label>   
-                    </div>
-                    <div class="nao_tem_certeza">
-                        <input type="radio" id="nao_tem_certeza" name="nao_tem_certeza">
-                        <label for="nao_tem_certeza">Não tenho certeza</label>   
-                    </div>
-                    <label for="recurso_favorito">Qual é o seu recurso favorito do GITHUB?</label>
-                    <div class="recurso_favorito">
-                    <select name="recurso_favorito" id="recurso_favorito">
-                        <option value="Pages">Pages</option>
-                        <option value="Contribuir">Contribuir</option>
-                        <option value="Portfolios">Portfolios</option>
-                        <option value="Prefiro_nao_dizer">Prefiro não dizer</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                    </div>
-                    <label for="sugestao">Algum comentário ou sugestão?</label>
-                    <div class="sugestao">
-                        <input type="text" id="sugestao" name="sugestao">
-                    </div>
-                    <div class="button">
-                        <button>Enviar</button>
-                    </div>
-                    </div>
-                </div>
+                    <!-- Titulo do formulario -->
+                    <section class="titulo">
+                        <h1 class="title">Formulário de pesquisa</h1>
+                        <h3 class="subtitle">Obrigado por ajudar a nossa pesquisa</h3>
+                    </section>
+                    <!-- Area das informações pessoais -->
+                    <section class="container">
+                        <label for="nome">Nome</label>
+                        <section class="Nome">
+                            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                        </section>
+                        <label for="email">Email</label>
+                        <section class="Email">
+                            <input type="text" name="email" id="email" placeholder="Email" required>
+                        </section>
+                        <label for="idade">Idade</label>
+                        <section class="Idade">
+                            <input type="number" name="idade" id="idade" placeholder="Idade" required>
+                        </section>
+                        <!-- Area da função -->
+                        <label for="funcao">Qual melhor descreve a sua função?</label>
+                        <section class="funcao">
+                            <select name="funcao" id="funcao">
+                                <option value="Fucao_atual">Selecione a função atual</option>
+                                <option value="Aluna">Aluna</option>
+                                <option value="Trabalho">Trabalho em tempo integral</option>
+                                <option value="Aprendiz">Aprendiz em tempo integral</option>
+                                <option value="Não dizer">Prefiro não dizer</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </section>
+                        <!-- Area de recomendação -->
+                        <!-- Para que somente uma das opções seja selecionada é preciso colocar no atributo "name" o mesmo valor para todos os  inputs -->
+                        <label for="recomendacao">Você recomendaria o GITHUB a um amigo?</label>
+                        <section class="definitivamente">
+                            <input type="radio" id="definitivamente" name="opcao">
+                            <label for="definitivamente">Definitivamente</label>   
+                        </section>
+                        <section class="talvez">
+                            <input type="radio" id="talvez" name="opcao">
+                            <label for="talvez">Talvez</label>   
+                        </section>
+                        <section class="nao_tem_certeza">
+                            <input type="radio" id="nao_tem_certeza" name="opcao">
+                            <label for="nao_tem_certeza">Não tenho certeza</label>   
+                        </section>
+                        <label for="recurso_favorito">Qual é o seu recurso favorito do GITHUB?</label>
+                        <section class="recurso_favorito">
+                            <select name="recurso_favorito" id="recurso_favorito">
+                                <option value="Selecione_uma_opçao">Selecione uma opção</option>
+                                <option value="Pages">Pages</option>
+                                <option value="Contribuir">Contribuir</option>
+                                <option value="Portfolios">Portfolios</option>
+                                <option value="Prefiro_nao_dizer">Prefiro não dizer</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </section>
+                        <!--Area do comentério ou sugestões-->
+                        <label for="sugestao">Algum comentário ou sugestão?</label>
+                        <section class="sugestao">
+                            <input type="text" id="sugestao" name="sugestao">
+                        </section>
+                        <!-- Area do botão -->
+                        <section class="button">
+                            <button>Enviar</button>
+                        </section>
+                    </section>
             </form>
-        </div>
+        </section>
     </main>
 </body>
 </html>
