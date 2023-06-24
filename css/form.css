@@ -1,35 +1,61 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 .form {
     width: 100vw;
-    height: 100vh;
     background-color: #201b2c;
     display: flex;
     justify-content: center;
     align-items: center;
 }   
 
-.titulo {
-    color: #77ffc0;
-    font-weight: 800;
+form {
+    width: 50%;
 }
-.container label{
+
+.titulo {
     color: #00ff88;
     font-weight: 800;
 }
+
 .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    width: 100%;
     padding: 30px 35px;
     background-color: #212841;
     border-radius: 20px;
     box-shadow: 0 10px 40px #00000056;
+    color: white;
     
     
 }
 
+
+.container input {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+select {
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-family: poppins;
+    cursor: pointer;
+}
+.container > label {
+    font-family: poppins;
+    font-size: 20px;
+}

@@ -44,21 +44,23 @@
                         </section>
                         <!-- Area de recomendação -->
                         <!-- Para que somente uma das opções seja selecionada é preciso colocar no atributo "name" o mesmo valor para todos os  inputs -->
-                        <label for="recomendacao">Você recomendaria o GITHUB a um amigo?</label>
-                        <section class="definitivamente">
-                            <input type="radio" id="definitivamente" name="opcao">
-                            <label for="definitivamente">Definitivamente</label>   
+                        <section class="recomendation">
+                            <label for="recomendacao">Você recomendaria o GITHUB a um amigo?</label>
+                            <section class="definitivamente">
+                                <input type="radio" id="definitivamente" name="opcao">
+                                <label for="definitivamente">Definitivamente</label>   
+                            </section>
+                            <section class="talvez">
+                                <input type="radio" id="talvez" name="opcao">
+                                <label for="talvez">Talvez</label>   
+                            </section>
+                            <section class="nao_tem_certeza">
+                                <input type="radio" id="nao_tem_certeza" name="opcao">
+                                <label for="nao_tem_certeza">Não tenho certeza</label>   
+                            </section>
                         </section>
-                        <section class="talvez">
-                            <input type="radio" id="talvez" name="opcao">
-                            <label for="talvez">Talvez</label>   
-                        </section>
-                        <section class="nao_tem_certeza">
-                            <input type="radio" id="nao_tem_certeza" name="opcao">
-                            <label for="nao_tem_certeza">Não tenho certeza</label>   
-                        </section>
-                        <label for="recurso_favorito">Qual é o seu recurso favorito do GITHUB?</label>
-                        <section class="recurso_favorito">
+                            <label for="recurso_favorito">Qual é o seu recurso favorito do GITHUB?</label>
+                            <section class="recurso_favorito">
                             <select name="recurso_favorito" id="recurso_favorito">
                                 <option value="Selecione_uma_opçao">Selecione uma opção</option>
                                 <option value="Pages">Pages</option>
